@@ -29,6 +29,7 @@ public class IntegrateTest {
 		
 		System.out.println("Sum: " + sum);
 		double Tn = sum * dx/2;
+		System.out.println("Tn: " + Tn);
 		
 	}
 	
