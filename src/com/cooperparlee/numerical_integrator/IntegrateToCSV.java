@@ -57,7 +57,7 @@ public class IntegrateToCSV {
 		
 		DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH.mm.ss");
 		
-		File csvOutputFile = new File("C:\\Users\\cparl\\OneDrive\\Programming Workspaces\\Numerical Integrator\\out " + LocalDateTime.now().format(myFormatObj) + ".csv");
+		File csvOutputFile = new File("C:\\Users\\cparl\\OneDrive\\Programming Workspaces\\Numerical Integrator\\output\\out " + LocalDateTime.now().format(myFormatObj) + ".csv");
 	    try (PrintWriter pw = new PrintWriter(csvOutputFile)) {
 	        lines.stream()
 	          .map(this::convertToCSV)
